@@ -1,0 +1,100 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  background: #000;
+  color: #eee;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #2c2c2c, #3a4f63);
+  border-radius: 0 0 20px 20px;
+}
+
+h1, h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: #6a5acd;
+}
+
+.btn {
+  background: #6a5acd;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.hero .btn {
+  margin-top: 150px; /* separa del subtítulo */
+}
+
+.btn:hover {
+  background: #3a4f63;
+}
+
+.servicios, .experiencia, .contacto {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+form input, form textarea {
+  width: 80%;
+  max-width: 500px;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+
+}
+
+form button {
+  background: #6a5acd;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px;
+   margin-top: 10px;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+.contacto form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px; /* espacio entre campos */
+  margin-top: 20px;
+}
+
+
+form button:hover {
+  background: #3a4f63;
+}
+
+footer {
+  background: #2c2c2c;
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px 20px 0 0;
+}
+
+.servicios {
+  text-align: center;   /* centra todo el contenido dentro de la sección */
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 auto;       /* centra la lista dentro del contenedor */
+  display: inline-block;/* hace que la lista se comporte como bloque centrado */
+}
+
+li {
+  margin: 8px 0;
+  display: flex;
+  justify-content: center; /* centra horizontalmente el ícono y el texto */
+  align-items: center;      /* centra verticalmente */
+}
