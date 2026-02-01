@@ -3,47 +3,314 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landing Page Corporativa</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <title>Robert Hurtado | Ingeniero Electricista</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
 </head>
 <body>
-  <header class="hero">
-    <h1>Proyectos de Ingeniería Eléctrica</h1>
-    <p>Soluciones tecnológicas con enfoque corporativo y eficiencia</p>
-    <a href="#contacto" class="btn">Contáctame</a>
-  </header>
+  <!-- Navbar Fija -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <span class="brand-icon">⚡</span>
+        <span class="brand-name">ROH</span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#inicio" class="nav-link">Inicio</a></li>
+        <li><a href="#servicios" class="nav-link">Servicios</a></li>
+        <li><a href="#experiencia" class="nav-link">Experiencia</a></li>
+        <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        <li><a href="https://www.linkedin.com/in/hurtr/" target="_blank" class="nav-link linkedin-btn">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a></li>
+      </ul>
+      <button class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
 
-  <section class="servicios">
-    <h2>Servicios</h2>
-    <ul>
-      <li>🔌 Instalaciones Eléctricas de Baja Tensión</li>
-      <li>🛠️ Asesoría técnica personalizada</li>
-      <li>📐  Diseño y elaboración de proyectos de Ingeniería</li>
-    </ul>
+  <!-- Hero Section -->
+  <section id="inicio" class="hero-edge">
+    <div class="vertical-edge left"></div>
+    
+    <div class="hero-content">
+      <h1 class="name-glow">Robert Hurtado</h1>
+      <div class="title-divider">
+        <span class="line"></span>
+        <p class="subtitle">Ingeniero Electricista</p>
+        <span class="line"></span>
+      </div>
+      <p class="tagline">Innovación técnica con precisión y eficiencia energética</p>
+      
+      <div class="hero-stats">
+        <div class="stat-card">
+          <div class="stat-icon">⚡</div>
+          <div class="stat-content">
+            <span class="stat-number">10+</span>
+            <span class="stat-label">Años de experiencia</span>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">📈</div>
+          <div class="stat-content">
+            <span class="stat-number">40%</span>
+            <span class="stat-label">Ahorro energético promedio</span>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🏭</div>
+          <div class="stat-content">
+            <span class="stat-number">10+</span>
+            <span class="stat-label">Proyectos ejecutados</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="hero-actions">
+        <a href="#contacto" class="btn btn-primary">
+          <i class="fas fa-bolt"></i> Contactar ahora
+        </a>
+        <a href="#servicios" class="btn btn-secondary">
+          <i class="fas fa-cogs"></i> Ver servicios
+        </a>
+      </div>
+    </div>
+    
+    <div class="vertical-edge right"></div>
   </section>
 
-  <section class="experiencia">
-    <h2>Experiencia</h2>
-    <p>Proyectos de ingeniería.</p>
-    <p>Operaciones en planta de ciclo combinado.</p>
-    <p>Ventas técnicas</p>
-    <a href="https://www.linkedin.com/in/hurtr/" target="_blank">LinkedIn</a>
+  <!-- Servicios -->
+  <section id="servicios" class="services-section">
+    <div class="section-header">
+      <h2 class="section-title">Servicios Especializados</h2>
+      <p class="section-subtitle">Soluciones técnicas de alta precisión</p>
+      <div class="title-underline"></div>
+    </div>
+    
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">
+          <i class="fas fa-bolt"></i>
+        </div>
+        <h3 class="service-title">Instalaciones Eléctricas</h3>
+        <p class="service-description">Sistemas de baja tensión con los más altos estándares de seguridad y eficiencia.</p>
+        <ul class="service-features">
+          <li><i class="fas fa-check"></i> Diseño y ejecución</li>
+          <li><i class="fas fa-check"></i> Certificación normativa</li>
+          <li><i class="fas fa-check"></i> Mantenimiento predictivo</li>
+        </ul>
+      </div>
+      
+      <div class="service-card">
+        <div class="service-icon">
+          <i class="fas fa-industry"></i>
+        </div>
+        <h3 class="service-title">Asesoría Técnica</h3>
+        <p class="service-description">Consultoría especializada para optimización de procesos y recursos energéticos.</p>
+        <ul class="service-features">
+          <li><i class="fas fa-check"></i> Auditorías energéticas</li>
+          <li><i class="fas fa-check"></i> Planes de eficiencia</li>
+          <li><i class="fas fa-check"></i> Análisis de costos</li>
+        </ul>
+      </div>
+      
+      <div class="service-card">
+        <div class="service-icon">
+          <i class="fas fa-project-diagram"></i>
+        </div>
+        <h3 class="service-title">Diseño de Proyectos</h3>
+        <p class="service-description">Elaboración completa de proyectos de ingeniería eléctrica con enfoque ejecutivo.</p>
+        <ul class="service-features">
+          <li><i class="fas fa-check"></i> Documentación técnica</li>
+          <li><i class="fas fa-check"></i> Planos y esquemas</li>
+          <li><i class="fas fa-check"></i> Gestión de permisos</li>
+        </ul>
+      </div>
+    </div>
   </section>
 
-  <section id="contacto" class="contacto">
-    <h2>Contacto</h2>
-    <form action="https://formspree.io/f/xaqwbgql" method="POST">
-      <input type="text" name="name" placeholder="Nombre" required>
-      <input type="email" name="email" placeholder="Email" required>
-      <textarea name="message" placeholder="Mensaje" required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
-
+  <!-- Experiencia -->
+  <section id="experiencia" class="experience-section">
+    <div class="section-header">
+      <h2 class="section-title">Trayectoria Profesional</h2>
+      <p class="section-subtitle">Experiencia corporativa y técnica</p>
+      <div class="title-underline"></div>
+    </div>
+    
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3 class="timeline-title">Proyectos de Ingeniería</h3>
+          <p class="timeline-desc">Diseño, planificación y ejecución de proyectos eléctricos industriales y comerciales.</p>
+          <div class="timeline-tags">
+            <span class="tag">Diseño</span>
+            <span class="tag">Ejecución</span>
+            <span class="tag">Supervisión</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3 class="timeline-title">Operaciones en Planta</h3>
+          <p class="timeline-desc">Gestión operativa en plantas de ciclo combinado y sistemas de generación energética.</p>
+          <div class="timeline-tags">
+            <span class="tag">Operaciones</span>
+            <span class="tag">Mantenimiento</span>
+            <span class="tag">Optimización</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3 class="timeline-title">Ventas Técnicas</h3>
+          <p class="timeline-desc">Asesoramiento comercial especializado en soluciones y equipos eléctricos industriales.</p>
+          <div class="timeline-tags">
+            <span class="tag">Consultoría</span>
+            <span class="tag">Soluciones</span>
+            <span class="tag">Clientes</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="cta-container">
+      <a href="https://www.linkedin.com/in/hurtr/" target="_blank" class="btn btn-linkedin">
+        <i class="fab fa-linkedin"></i> Ver perfil completo en LinkedIn
+      </a>
+      <p class="cta-note">Conectemos para oportunidades profesionales</p>
+    </div>
   </section>
 
-  <footer>
-    <p>© 2025 Robert Hurtado</p>
+  <!-- Contacto -->
+  <section id="contacto" class="contact-section">
+    <div class="section-header">
+      <h2 class="section-title">Contacto Profesional</h2>
+      <p class="section-subtitle">Hablemos sobre su próximo proyecto</p>
+      <div class="title-underline"></div>
+    </div>
+    
+    <div class="contact-container">
+      <div class="contact-info">
+        <div class="info-card">
+          <div class="info-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <h3 class="info-title">Correo Electrónico</h3>
+          <p class="info-text">Respuesta en menos de 24 horas</p>
+          <a href="mailto:contacto@ejemplo.com" class="info-link">Enviar email</a>
+        </div>
+        
+        <div class="info-card">
+          <div class="info-icon">
+            <i class="fas fa-file-alt"></i>
+          </div>
+          <h3 class="info-title">CV Profesional</h3>
+          <p class="info-text">Disponible para revisión</p>
+          <a href="#" class="info-link">Solicitar CV</a>
+        </div>
+        
+        <div class="info-card">
+          <div class="info-icon">
+            <i class="fas fa-calendar-check"></i>
+          </div>
+          <h3 class="info-title">Disponibilidad</h3>
+          <p class="info-text">Consultoría y proyectos</p>
+          <a href="#contacto" class="info-link">Agendar reunión</a>
+        </div>
+      </div>
+      
+      <form action="https://formspree.io/f/xaqwbgql" method="POST" class="contact-form">
+        <div class="form-group">
+          <label for="name">Nombre completo *</label>
+          <input type="text" id="name" name="name" required class="form-input">
+          <div class="input-underline"></div>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Correo electrónico *</label>
+          <input type="email" id="email" name="email" required class="form-input">
+          <div class="input-underline"></div>
+        </div>
+        
+        <div class="form-group">
+          <label for="subject">Asunto del mensaje</label>
+          <select id="subject" name="subject" class="form-select">
+            <option value="">Seleccionar motivo</option>
+            <option value="consulta">Consulta técnica</option>
+            <option value="presupuesto">Solicitud de presupuesto</option>
+            <option value="colaboracion">Oportunidad de colaboración</option>
+            <option value="otro">Otro</option>
+          </select>
+          <div class="input-underline"></div>
+        </div>
+        
+        <div class="form-group">
+          <label for="message">Mensaje *</label>
+          <textarea id="message" name="message" rows="5" required class="form-textarea"></textarea>
+          <div class="input-underline"></div>
+        </div>
+        
+        <button type="submit" class="btn btn-submit">
+          <i class="fas fa-paper-plane"></i> Enviar mensaje
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <span class="logo-icon">⚡</span>
+          <span class="logo-text">Robert Hurtado<br><span class="logo-subtext">Ingeniero Eléctrico</span></span>
+        </div>
+        <p class="footer-tagline">Innovación y precisión en cada proyecto</p>
+      </div>
+      
+      <div class="footer-links">
+        <h4 class="footer-title">Enlaces</h4>
+        <ul class="footer-menu">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#experiencia">Experiencia</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-social">
+        <h4 class="footer-title">Conectar</h4>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/hurtr/" target="_blank" class="social-icon">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="#" class="social-icon">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="#" class="social-icon">
+            <i class="fas fa-file-pdf"></i>
+          </a>
+        </div>
+        <p class="social-note">Disponible para proyectos y consultoría</p>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p class="copyright">© 2025 Robert Hurtado. Todos los derechos reservados.</p>
+      <p class="legal">Diseñado con precisión técnica</p>
+    </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
